@@ -21,6 +21,7 @@
   
     <tr>
       <th scope = "col">Food</th>
+      <th scope = "col">Count</th>
       <th scope = "col">Serving Size</th>
       <th scope = "col">Calories</th>
       <th scope = "col">Total Fat (g)</th>
@@ -31,292 +32,547 @@
   </thead>
   <tbody>
     <tr>
-      <td>6" Yellow Corn Tortilla</td>
-      <td>1 tortilla</td>
-      <td>60</td>
-      <td>1</td>
-      <td>12</td>
-      <td>1</td>
-      <td>10</td>
+        <td>
+            6" Yellow Corn Tortilla
+            <div>
+                <button id="minus-corn-tortilla">-</button>
+                <span id="count-corn-tortilla">0</span>
+                <button id="plus-corn-tortilla">+</button>
+            </div>
+        </td>
+        <td>1 tortilla</td>
+        <td>60</td>
+        <td>1</td>
+        <td>12</td>
+        <td>1</td>
+        <td>10</td>
     </tr>
     <tr>
-      <td>8" Flour Tortilla</td>
-      <td>1 tortilla</td>
-      <td>140</td>
-      <td>3</td>
-      <td>24</td>
-      <td>4</td>
-      <td>320</td>
+        <td>
+            8" Flour Tortilla
+            <div>
+                <button id="minus-flour-tortilla">-</button>
+                <span id="count-flour-tortilla">0</span>
+                <button id="plus-flour-tortilla">+</button>
+            </div>
+        </td>
+        <td>1 tortilla</td>
+        <td>140</td>
+        <td>3</td>
+        <td>24</td>
+        <td>4</td>
+        <td>320</td>
     </tr>
     <tr>
-      <td>California Dreaming Sandwich</td>
-      <td>1 sandwich</td>
-      <td>530</td>
-      <td>22</td>
-      <td>56</td>
-      <td>28</td>
-      <td>880</td>
+        <td>
+            California Dreaming Sandwich
+            <div>
+                <button id="minus-california-dreaming">-</button>
+                <span id="count-california-dreaming">0</span>
+                <button id="plus-california-dreaming">+</button>
+            </div>
+        </td>
+        <td>1 sandwich</td>
+        <td>530</td>
+        <td>22</td>
+        <td>56</td>
+        <td>28</td>
+        <td>880</td>
     </tr>
     <tr>
-      <td>Cajun Chicken Drumsticks</td>
-      <td>2 drumsticks</td>
-      <td>280</td>
-      <td>16</td>
-      <td>4</td>
-      <td>28</td>
-      <td>680</td>
+        <td>
+            Cajun Chicken Drumsticks
+            <div>
+                <button id="minus-cajun-drumsticks">-</button>
+                <span id="count-cajun-drumsticks">0</span>
+                <button id="plus-cajun-drumsticks">+</button>
+            </div>
+        </td>
+        <td>2 drumsticks</td>
+        <td>280</td>
+        <td>16</td>
+        <td>4</td>
+        <td>28</td>
+        <td>680</td>
     </tr>
     <tr>
-      <td>Chicken Caesar Salad</td>
-      <td>2 cups</td>
-      <td>330</td>
-      <td>22</td>
-      <td>10</td>
-      <td>26</td>
-      <td>740</td>
+        <td>
+            Chicken Caesar Salad
+            <div>
+                <button id="minus-caesar-salad">-</button>
+                <span id="count-caesar-salad">0</span>
+                <button id="plus-caesar-salad">+</button>
+            </div>
+        </td>
+        <td>2 cups</td>
+        <td>330</td>
+        <td>22</td>
+        <td>10</td>
+        <td>26</td>
+        <td>740</td>
     </tr>
     <tr>
-      <td>Chicken Parmesan Sandwich</td>
-      <td>1 sandwich</td>
-      <td>540</td>
-      <td>21</td>
-      <td>52</td>
-      <td>33</td>
-      <td>960</td>
+        <td>
+            Chicken Parmesan Sandwich
+            <div>
+                <button id="minus-chicken-parmesan">-</button>
+                <span id="count-chicken-parmesan">0</span>
+                <button id="plus-chicken-parmesan">+</button>
+            </div>
+        </td>
+        <td>1 sandwich</td>
+        <td>540</td>
+        <td>21</td>
+        <td>52</td>
+        <td>33</td>
+        <td>960</td>
     </tr>
     <tr>
-      <td>Chicken Piccata</td>
-      <td>4 oz</td>
-      <td>300</td>
-      <td>19</td>
-      <td>6</td>
-      <td>25</td>
-      <td>590</td>
+        <td>
+            Chicken Piccata
+            <div>
+                <button id="minus-chicken-piccata">-</button>
+                <span id="count-chicken-piccata">0</span>
+                <button id="plus-chicken-piccata">+</button>
+            </div>
+        </td>
+        <td>4 oz</td>
+        <td>300</td>
+        <td>19</td>
+        <td>6</td>
+        <td>25</td>
+        <td>590</td>
     </tr>
     <tr>
-      <td>Chili Bowl</td>
-      <td>1 cup</td>
-      <td>250</td>
-      <td>9</td>
-      <td>25</td>
-      <td>17</td>
-      <td>800</td>
+        <td>
+            Chili Bowl
+            <div>
+                <button id="minus-chili-bowl">-</button>
+                <span id="count-chili-bowl">0</span>
+                <button id="plus-chili-bowl">+</button>
+            </div>
+        </td>
+        <td>1 cup</td>
+        <td>250</td>
+        <td>9</td>
+        <td>25</td>
+        <td>17</td>
+        <td>800</td>
     </tr>
     <tr>
-      <td>Chipotle Pinto Beans</td>
-      <td>1/2 cup</td>
-      <td>120</td>
-      <td>2</td>
-      <td>21</td>
-      <td>7</td>
-      <td>250</td>
+        <td>
+            Chipotle Pinto Beans
+            <div>
+                <button id="minus-chipotle-pinto">-</button>
+                <span id="count-chipotle-pinto">0</span>
+                <button id="plus-chipotle-pinto">+</button>
+            </div>
+        </td>
+        <td>1/2 cup</td>
+        <td>120</td>
+        <td>2</td>
+        <td>21</td>
+        <td>7</td>
+        <td>250</td>
     </tr>
     <tr>
-      <td>Dinner Roll</td>
-      <td>1 roll</td>
-      <td>80</td>
-      <td>1</td>
-      <td>15</td>
-      <td>3</td>
-      <td>150</td>
+        <td>
+            Dinner Roll
+            <div>
+                <button id="minus-dinner-roll">-</button>
+                <span id="count-dinner-roll">0</span>
+                <button id="plus-dinner-roll">+</button>
+            </div>
+        </td>
+        <td>1 roll</td>
+        <td>80</td>
+        <td>1</td>
+        <td>15</td>
+        <td>3</td>
+        <td>150</td>
     </tr>
     <tr>
-      <td>Egg & Cheese Bagel</td>
-      <td>1 sandwich</td>
-      <td>380</td>
-      <td>12</td>
-      <td>48</td>
-      <td>17</td>
-      <td>620</td>
+        <td>
+            Egg & Cheese Bagel
+            <div>
+                <button id="minus-egg-bagel">-</button>
+                <span id="count-egg-bagel">0</span>
+                <button id="plus-egg-bagel">+</button>
+            </div>
+        </td>
+        <td>1 sandwich</td>
+        <td>380</td>
+        <td>12</td>
+        <td>48</td>
+        <td>17</td>
+        <td>620</td>
     </tr>
     <tr>
-      <td>French Fried Okra</td>
-      <td>1 cup</td>
-      <td>230</td>
-      <td>13</td>
-      <td>25</td>
-      <td>3</td>
-      <td>400</td>
+        <td>
+            French Fried Okra
+            <div>
+                <button id="minus-fried-okra">-</button>
+                <span id="count-fried-okra">0</span>
+                <button id="plus-fried-okra">+</button>
+            </div>
+        </td>
+        <td>1 cup</td>
+        <td>230</td>
+        <td>13</td>
+        <td>25</td>
+        <td>3</td>
+        <td>400</td>
     </tr>
     <tr>
-      <td>Fried Cheese Curds</td>
-      <td>4 oz</td>
-      <td>500</td>
-      <td>34</td>
-      <td>30</td>
-      <td>19</td>
-      <td>890</td>
+        <td>
+            Fried Cheese Curds
+            <div>
+                <button id="minus-cheese-curds">-</button>
+                <span id="count-cheese-curds">0</span>
+                <button id="plus-cheese-curds">+</button>
+            </div>
+        </td>
+        <td>4 oz</td>
+        <td>500</td>
+        <td>34</td>
+        <td>30</td>
+        <td>19</td>
+        <td>890</td>
     </tr>
     <tr>
-      <td>Garlic Cheese Biscuit</td>
-      <td>1 biscuit</td>
-      <td>210</td>
-      <td>13</td>
-      <td>20</td>
-      <td>4</td>
-      <td>400</td>
+        <td>
+            Garlic Cheese Biscuit
+            <div>
+                <button id="minus-cheese-biscuit">-</button>
+                <span id="count-cheese-biscuit">0</span>
+                <button id="plus-cheese-biscuit">+</button>
+            </div>
+        </td>
+        <td>1 biscuit</td>
+        <td>210</td>
+        <td>13</td>
+        <td>20</td>
+        <td>4</td>
+        <td>400</td>
     </tr>
     <tr>
-      <td>Hamburger</td>
-      <td>1 sandwich</td>
-      <td>250</td>
-      <td>9</td>
-      <td>31</td>
-      <td>12</td>
-      <td>370</td>
+        <td>
+            Hamburger
+            <div>
+                <button id="minus-hamburger">-</button>
+                <span id="count-hamburger">0</span>
+                <button id="plus-hamburger">+</button>
+            </div>
+        </td>
+        <td>1 sandwich</td>
+        <td>250</td>
+        <td>9</td>
+        <td>31</td>
+        <td>12</td>
+        <td>370</td>
     </tr>
     <tr>
-      <td>Jasmine Rice</td>
-      <td>1 cup</td>
-      <td>205</td>
-      <td>0</td>
-      <td>45</td>
-      <td>4</td>
-      <td>0</td>
+        <td>
+            Jasmine Rice
+            <div>
+                <button id="minus-jasmine-rice">-</button>
+                <span id="count-jasmine-rice">0</span>
+                <button id="plus-jasmine-rice">+</button>
+            </div>
+        </td>
+        <td>1 cup</td>
+        <td>205</td>
+        <td>0</td>
+        <td>45</td>
+        <td>4</td>
+        <td>0</td>
     </tr>
     <tr>
-      <td>Macaroni & Cheese</td>
-      <td>1 cup</td>
-      <td>310</td>
-      <td>13</td>
-      <td>36</td>
-      <td>12</td>
-      <td>720</td>
+        <td>
+            Macaroni & Cheese
+            <div>
+                <button id="minus-mac-cheese">-</button>
+                <span id="count-mac-cheese">0</span>
+                <button id="plus-mac-cheese">+</button>
+            </div>
+        </td>
+        <td>1 cup</td>
+        <td>310</td>
+        <td>13</td>
+        <td>36</td>
+        <td>12</td>
+        <td>720</td>
     </tr>
     <tr>
-      <td>Meat Lover's Pizza (slice)</td>
-      <td>1 slice</td>
-      <td>234</td>
-      <td>11</td>
-      <td>22</td>
-      <td>12</td>
-      <td>510</td>
+        <td>
+            Meat Lover's Pizza (slice)
+            <div>
+                <button id="minus-meat-pizza">-</button>
+                <span id="count-meat-pizza">0</span>
+                <button id="plus-meat-pizza">+</button>
+            </div>
+        </td>
+        <td>1 slice</td>
+        <td>234</td>
+        <td>11</td>
+        <td>22</td>
+        <td>12</td>
+        <td>510</td>
     </tr>
     <tr>
-      <td>Mini Corn Dogs</td>
-      <td>6 pieces</td>
-      <td>300</td>
-      <td>17</td>
-      <td>28</td>
-      <td>7</td>
-      <td>720</td>
+        <td>
+            Mini Corn Dogs
+            <div>
+                <button id="minus-corn-dogs">-</button>
+                <span id="count-corn-dogs">0</span>
+                <button id="plus-corn-dogs">+</button>
+            </div>
+        </td>
+        <td>6 pieces</td>
+        <td>300</td>
+        <td>17</td>
+        <td>28</td>
+        <td>7</td>
+        <td>720</td>
     </tr>
     <tr>
-      <td>Nonfat Plain Greek Yogurt</td>
-      <td>1/4 cup</td>
-      <td>30</td>
-      <td>0</td>
-      <td>2</td>
-      <td>5</td>
-      <td>25</td>
+        <td>
+            Nonfat Plain Greek Yogurt
+            <div>
+                <button id="minus-plain-yogurt">-</button>
+                <span id="count-plain-yogurt">0</span>
+                <button id="plus-plain-yogurt">+</button>
+            </div>
+        </td>
+        <td>1/4 cup</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2</td>
+        <td>5</td>
+        <td>25</td>
     </tr>
     <tr>
-      <td>Oven Roasted Red Potatoes</td>
-      <td>1 cup</td>
-      <td>160</td>
-      <td>5</td>
-      <td>27</td>
-      <td>4</td>
-      <td>420</td>
+        <td>
+            Oven Roasted Red Potatoes
+            <div>
+                <button id="minus-red-potatoes">-</button>
+                <span id="count-red-potatoes">0</span>
+                <button id="plus-red-potatoes">+</button>
+            </div>
+        </td>
+        <td>1 cup</td>
+        <td>160</td>
+        <td>5</td>
+        <td>27</td>
+        <td>4</td>
+        <td>420</td>
     </tr>
     <tr>
-      <td>Pickled Red Onion</td>
-      <td>1/4 cup</td>
-      <td>20</td>
-      <td>0</td>
-      <td>5</td>
-      <td>0</td>
-      <td>200</td>
+        <td>
+            Pickled Red Onion
+            <div>
+                <button id="minus-red-onion">-</button>
+                <span id="count-red-onion">0</span>
+                <button id="plus-red-onion">+</button>
+            </div>
+        </td>
+        <td>1/4 cup</td>
+        <td>20</td>
+        <td>0</td>
+        <td>5</td>
+        <td>0</td>
+        <td>200</td>
     </tr>
     <tr>
-      <td>Pork Carnitas</td>
-      <td>3 oz</td>
-      <td>180</td>
-      <td>9</td>
-      <td>3</td>
-      <td>20</td>
-      <td>430</td>
+        <td>
+            Pork Carnitas
+            <div>
+                <button id="minus-carnitas">-</button>
+                <span id="count-carnitas">0</span>
+                <button id="plus-carnitas">+</button>
+            </div>
+        </td>
+        <td>3 oz</td>
+        <td>180</td>
+        <td>9</td>
+        <td>3</td>
+        <td>20</td>
+        <td>430</td>
     </tr>
     <tr>
-      <td>Reese's Overloaded Brownie</td>
-      <td>1 brownie</td>
-      <td>400</td>
-      <td>22</td>
-      <td>48</td>
-      <td>5</td>
-      <td>320</td>
+        <td>
+            Reese's Overloaded Brownie
+            <div>
+                <button id="minus-brownie">-</button>
+                <span id="count-brownie">0</span>
+                <button id="plus-brownie">+</button>
+            </div>
+        </td>
+        <td>1 brownie</td>
+        <td>400</td>
+        <td>22</td>
+        <td>48</td>
+        <td>5</td>
+        <td>320</td>
     </tr>
     <tr>
-      <td>Scrambled Eggs with Bacon & Cheese</td>
-      <td>1/2 cup</td>
-      <td>235</td>
-      <td>18</td>
-      <td>2</td>
-      <td>15</td>
-      <td>420</td>
+        <td>
+            Scrambled Eggs with Bacon & Cheese
+            <div>
+                <button id="minus-eggs-bacon">-</button>
+                <span id="count-eggs-bacon">0</span>
+                <button id="plus-eggs-bacon">+</button>
+            </div>
+        </td>
+        <td>1/2 cup</td>
+        <td>235</td>
+        <td>18</td>
+        <td>2</td>
+        <td>15</td>
+        <td>420</td>
     </tr>
     <tr>
-      <td>Shredded Lettuce</td>
-      <td>1 cup</td>
-      <td>10</td>
-      <td>0</td>
-      <td>2</td>
-      <td>1</td>
-      <td>5</td>
+        <td>
+            Shredded Lettuce
+            <div>
+                <button id="minus-lettuce">-</button>
+                <span id="count-lettuce">0</span>
+                <button id="plus-lettuce">+</button>
+            </div>
+        </td>
+        <td>1 cup</td>
+        <td>10</td>
+        <td>0</td>
+        <td>2</td>
+        <td>1</td>
+        <td>5</td>
     </tr>
     <tr>
-      <td>Sidewinders French Fries</td>
-      <td>1 serving (3 oz)</td>
-      <td>260</td>
-      <td>13</td>
-      <td>32</td>
-      <td>3</td>
-      <td>420</td>
+        <td>
+            Sidewinders French Fries
+            <div>
+                <button id="minus-sidewinders">-</button>
+                <span id="count-sidewinders">0</span>
+                <button id="plus-sidewinders">+</button>
+            </div>
+        </td>
+        <td>1 serving (3 oz)</td>
+        <td>260</td>
+        <td>13</td>
+        <td>32</td>
+        <td>3</td>
+        <td>420</td>
     </tr>
     <tr>
-      <td>Southern Style Chicken and Dumplings</td>
-      <td>1 cup</td>
-      <td>320</td>
-      <td>12</td>
-      <td>34</td>
-      <td>20</td>
-      <td>950</td>
+        <td>
+            Southern Style Chicken and Dumplings
+            <div>
+                <button id="minus-chicken-dumplings">-</button>
+                <span id="count-chicken-dumplings">0</span>
+                <button id="plus-chicken-dumplings">+</button>
+            </div>
+        </td>
+        <td>1 cup</td>
+        <td>320</td>
+        <td>12</td>
+        <td>34</td>
+        <td>20</td>
+        <td>950</td>
     </tr>
     <tr>
-      <td>Spicy Black Bean Burger</td>
-      <td>1 patty</td>
-      <td>200</td>
-      <td>5</td>
-      <td>35</td>
-      <td>10</td>
-      <td>390</td>
+        <td>
+            Spicy Black Bean Burger
+            <div>
+                <button id="minus-black-bean-burger">-</button>
+                <span id="count-black-bean-burger">0</span>
+                <button id="plus-black-bean-burger">+</button>
+            </div>
+        </td>
+        <td>1 patty</td>
+        <td>200</td>
+        <td>5</td>
+        <td>35</td>
+        <td>10</td>
+        <td>390</td>
     </tr>
     <tr>
-      <td>Vanilla Greek Yogurt Box</td>
-      <td>1 cup</td>
-      <td>130</td>
-      <td>0</td>
-      <td>18</td>
-      <td>12</td>
-      <td>55</td>
+        <td>
+            Vanilla Greek Yogurt Box
+            <div>
+                <button id="minus-vanilla-yogurt">-</button>
+                <span id="count-vanilla-yogurt">0</span>
+                <button id="plus-vanilla-yogurt">+</button>
+            </div>
+        </td>
+        <td>1 cup</td>
+        <td>130</td>
+        <td>0</td>
+        <td>18</td>
+        <td>12</td>
+        <td>55</td>
     </tr>
     <tr>
-      <td>Vegan Pub Fried Fish</td>
-      <td>1 piece</td>
-      <td>220</td>
-      <td>12</td>
-      <td>20</td>
-      <td>9</td>
-      <td>480</td>
+        <td>
+            Vegan Pub Fried Fish
+            <div>
+                <button id="minus-vegan-fish">-</button>
+                <span id="count-vegan-fish">0</span>
+                <button id="plus-vegan-fish">+</button>
+            </div>
+        </td>
+        <td>1 piece</td>
+        <td>220</td>
+        <td>12</td>
+        <td>20</td>
+        <td>9</td>
+        <td>480</td>
     </tr>
     <tr>
-      <td>Whipped Potatoes</td>
-      <td>1 cup</td>
-      <td>210</td>
-      <td>9</td>
-      <td>29</td>
-      <td>4</td>
-      <td>540</td>
+        <td>
+            Whipped Potatoes
+            <div>
+                <button id="minus-whipped-potatoes">-</button>
+                <span id="count-whipped-potatoes">0</span>
+                <button id="plus-whipped-potatoes">+</button>
+            </div>
+        </td>
+        <td>1 cup</td>
+        <td>210</td>
+        <td>9</td>
+        <td>29</td>
+        <td>4</td>
+        <td>540</td>
     </tr>
+    </tr>
+
+    <script>
+        // List of all food item keys used in the button/span IDs above
+        const foodKeys = [
+            "corn-tortilla", "flour-tortilla", "california-dreaming", "cajun-drumsticks", "caesar-salad",
+            "chicken-parmesan", "chicken-piccata", "chili-bowl", "chipotle-pinto", "dinner-roll",
+            "egg-bagel", "fried-okra", "cheese-curds", "cheese-biscuit", "hamburger", "jasmine-rice",
+            "mac-cheese", "meat-pizza", "corn-dogs", "plain-yogurt", "red-potatoes", "red-onion",
+            "carnitas", "brownie", "eggs-bacon", "lettuce", "sidewinders", "chicken-dumplings",
+            "black-bean-burger", "vanilla-yogurt", "vegan-fish", "whipped-potatoes"
+        ];
+
+        // Initialize variables and event listeners for each food item
+        foodKeys.forEach(key => {
+            let count = 0;
+            const minusBtn = document.getElementById(`minus-${key}`);
+            const plusBtn = document.getElementById(`plus-${key}`);
+            const countSpan = document.getElementById(`count-${key}`);
+
+            minusBtn.addEventListener('click', () => {
+                if (count > 0) count--;
+                countSpan.textContent = count;
+            });
+
+            plusBtn.addEventListener('click', () => {
+                count++;
+                countSpan.textContent = count;
+            });
+        });
+    </script>
   
 </html>
