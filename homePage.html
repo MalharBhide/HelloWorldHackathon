@@ -10,6 +10,12 @@
         <h1>Purdue Dining Nutrition Calculator</h1>
         <p>Test Food <button id="sTestFood">-</button>1<button id="aTestFood">+</button></p>
     </body>
+    <style>
+    #foodSearch {
+      margin: 15px 0;
+      max-width: 400px;
+    }
+  </style>
     <head>
         list of foods
     </head>
@@ -546,6 +552,18 @@
     </tr>
 
     <script>
+        document.getElementById("foodSearch").addEventListener("keyup", function () {
+      let filter = this.value.toLowerCase();
+      let rows = document.querySelectorAll("#foodTable tr");
+
+      rows.forEach(row => {
+        let foodCell = row.querySelector("td");
+        if (foodCell) {
+          let text = foodCell.textContent.toLowerCase();
+          row.style.display = text.includes(filter) ? "" : "none";
+        }
+      });
+    });
         // List of all food item keys used in the button/span IDs above
         const foodKeys = [
             "corn-tortilla", "flour-tortilla", "california-dreaming", "cajun-drumsticks", "caesar-salad",
