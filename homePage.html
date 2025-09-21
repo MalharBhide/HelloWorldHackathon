@@ -8,6 +8,7 @@
     </head>
     <body class = "centered">
         <h1 >Purdue Dining Nutrition Calculator</h1>
+        <input type="text" id="foodSearch" placeholder="Search food..." class="form-control mb-3" style="max-width:300px;">
     </body>
 
 <table class = "table">
@@ -554,6 +555,18 @@
   </tbody>
 </table>
     <script>
+        // Search bar filter for food name
+        document.getElementById('foodSearch').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const rows = document.querySelectorAll('table tbody tr');
+            rows.forEach(row => {
+                const foodCell = row.querySelector('td');
+                if (foodCell) {
+                    const foodName = foodCell.textContent.toLowerCase();
+                    row.style.display = foodName.includes(query) ? '' : 'none';
+                }
+            });
+        });
         // List of all food item keys used in the button/span IDs above
         const foodKeys = [
             "corn-tortilla", "flour-tortilla", "california-dreaming", "cajun-drumsticks", "caesar-salad",
