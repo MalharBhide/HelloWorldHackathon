@@ -7,9 +7,9 @@
         <link href="homePage.css" rel="stylesheet">
     </head>
     <body class = "centered">
-        <h1>Purdue Dining Nutrition Calculator</h1>
+        <h1 >Purdue Dining Nutrition Calculator</h1>
         <p>Test Food <button id="sTestFood">-</button>1<button id="aTestFood">+</button></p>
-        <body></body>
+    </body>
 
 <table class = "table">
   <thead>
@@ -570,6 +570,63 @@
                 countSpan.textContent = count;
             });
         });
+        var totalCalories = 0;
+        var totalFat = 0;
+        var totalCarbs = 0;
+        var totalProtein = 0;
+        var totalSodium = 0;
+        for(var i = 0; i < foodKeys.length; i++) {
+            var key = foodKeys[i];
+            var count = parseInt(document.getElementById(`count-${key}`).textContent) || 0;
+            const nutritionData = {
+                "corn-tortilla":      { calories: 60,  fat: 1,  carbs: 12,  protein: 1,  sodium: 10 },
+                "flour-tortilla":     { calories: 140, fat: 3,  carbs: 24,  protein: 4,  sodium: 320 },
+                "california-dreaming":{ calories: 530, fat: 22, carbs: 56,  protein: 28, sodium: 880 },
+                "cajun-drumsticks":   { calories: 280, fat: 16, carbs: 4,   protein: 28, sodium: 680 },
+                "caesar-salad":       { calories: 330, fat: 22, carbs: 10,  protein: 26, sodium: 740 },
+                "chicken-parmesan":   { calories: 540, fat: 21, carbs: 52,  protein: 33, sodium: 960 },
+                "chicken-piccata":    { calories: 300, fat: 19, carbs: 6,   protein: 25, sodium: 590 },
+                "chili-bowl":         { calories: 250, fat: 9,  carbs: 25,  protein: 17, sodium: 800 },
+                "chipotle-pinto":     { calories: 120, fat: 2,  carbs: 21,  protein: 7,  sodium: 250 },
+                "dinner-roll":        { calories: 80,  fat: 1,  carbs: 15,  protein: 3,  sodium: 150 },
+                "egg-bagel":          { calories: 380, fat: 12, carbs: 48,  protein: 17, sodium: 620 },
+                "fried-okra":         { calories: 230, fat: 13, carbs: 25,  protein: 3,  sodium: 400 },
+                "cheese-curds":       { calories: 500, fat: 34, carbs: 30,  protein: 19, sodium: 890 },
+                "cheese-biscuit":     { calories: 210, fat: 13, carbs: 20,  protein: 4,  sodium: 400 },
+                "hamburger":          { calories: 250, fat: 9,  carbs: 31,  protein: 12, sodium: 370 },
+                "jasmine-rice":       { calories: 205, fat: 0,  carbs: 45,  protein: 4,  sodium: 0 },
+                "mac-cheese":         { calories: 310, fat: 13, carbs: 36,  protein: 12, sodium: 720 },
+                "meat-pizza":         { calories: 234, fat: 11, carbs: 22,  protein: 12, sodium: 510 },
+                "corn-dogs":          { calories: 300, fat: 17, carbs: 28,  protein: 7,  sodium: 720 },
+                "plain-yogurt":       { calories: 30,  fat: 0,  carbs: 2,   protein: 5,  sodium: 25 },
+                "red-potatoes":       { calories: 160, fat: 5,  carbs: 27,  protein: 4,  sodium: 420 },
+                "red-onion":          { calories: 20,  fat: 0,  carbs: 5,   protein: 0,  sodium: 200 },
+                "carnitas":           { calories: 180, fat: 9,  carbs: 3,   protein: 20, sodium: 430 },
+                "brownie":            { calories: 400, fat: 22, carbs: 48,  protein: 5,  sodium: 320 },
+                "eggs-bacon":         { calories: 235, fat: 18, carbs: 2,   protein: 15, sodium: 420 },
+                "lettuce":            { calories: 10,  fat: 0,  carbs: 2,   protein: 1,  sodium: 5 },
+                "sidewinders":        { calories: 260, fat: 13, carbs: 32,  protein: 3,  sodium: 420 },
+                "chicken-dumplings":  { calories: 320, fat: 12, carbs: 34,  protein: 20, sodium: 950 },
+                "black-bean-burger":  { calories: 200, fat: 5,  carbs: 35,  protein: 10, sodium: 390 },
+                "vanilla-yogurt":     { calories: 130, fat: 0,  carbs: 18,  protein: 12, sodium: 55 },
+                "vegan-fish":         { calories: 220, fat: 12, carbs: 20,  protein: 9,  sodium: 480 },
+                "whipped-potatoes":   { calories: 210, fat: 9,  carbs: 29,  protein: 4,  sodium: 540 }
+            };
+
+            function getNutritionInfo(key) {
+                return nutritionData[key] || { calories: 0, fat: 0, carbs: 0, protein: 0, sodium: 0 };
+            }
+            var nutritionInfo = getNutritionInfo(key);
+
+            totalCalories += nutritionInfo.calories * count;
+            totalFat += nutritionInfo.fat * count;
+            totalCarbs += nutritionInfo.carbs * count;
+            totalProtein += nutritionInfo.protein * count;
+            totalSodium += nutritionInfo.sodium * count;
+        }
+
+
+
     </script>
   
 </html>
