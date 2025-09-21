@@ -2,3 +2,15 @@
     text-align: center;
 }
 
+body {
+    background-color: rgba(244, 173, 31, 0.964);
+    border-style: solid;
+}
+
+td:nth-child(odd) {
+    background-color: rgb(167, 157, 144);
+}
+
+th{
+    border: 2px solid;
+}
